@@ -117,9 +117,6 @@ if st.button("Submit"):
     </div>
     """,
     unsafe_allow_html=True)
-    
-    st.markdown(f"")
-    st.markdown(f"📅 You’ve checked in for **{st.session_state.streak} day(s)** in a row, baobeir")
 
     # Send to Telegram
     telegram_msg = f"""✨ Genie Check-In ✨
