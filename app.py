@@ -23,11 +23,6 @@ score = st.radio(
 
 genie_note = st.text_area("Tell me about it:", placeholder="")
 
-st.components.v1.iframe(
-    "https://open.spotify.com/track/6jeWgaprnGyAsRhUcNuZKX",
-    height=80
-)
-
 if "last_checkin" not in st.session_state:
     st.session_state.last_checkin = None
     st.session_state.streak = 0
