@@ -69,6 +69,7 @@ if st.button("Submit"):
     </div>
     """,
     unsafe_allow_html=True)
+    st.markdown("")
 
 
     telegram_msg = f"""✨ Genie Check-In ✨
