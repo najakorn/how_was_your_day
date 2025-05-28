@@ -78,6 +78,24 @@ Message: {final_message}"""
 
     if score == 5:
         st.balloons()
+
+    if st.button("💌 New message for you"):
+    st.markdown(
+        """
+        <div style="
+            background-color: #fff8f2;
+            border-left: 5px solid #ff9aa2;
+            padding: 16px;
+            margin-top: 10px;
+            font-size: 15px;
+            border-radius: 10px;
+            color: #5a2e2e;
+        ">
+        You know I’d teleport this hug if I could.<br>
+        But for now… here’s my heart, wrapped in pixels. 💗
+        </div>
+        """, unsafe_allow_html=True
+    )
         
     # **just for today**
     st.session_state.streak = 3
