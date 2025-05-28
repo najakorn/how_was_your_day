@@ -126,9 +126,7 @@ if st.button("Submit"):
             st.session_state.streak = 1
         st.session_state.last_checkin = today
     
-    # **just for today**
-    st.session_state.streak = 5
-    # ******************
+    
     
     final_message = genie_note.strip() if genie_note.strip() else random.choice(messages[score])
 
@@ -161,8 +159,12 @@ Message: {final_message}"""
 
     if score == 5:
         st.balloons()
-
-    if st.session_state.streak % 5 == 0 and st.session_state.streak > 0:
+        
+    # **just for today**
+    st.session_state.streak = 3
+    # ******************
+    
+    if st.session_state.streak % 3 == 0 and st.session_state.streak > 0:
         reward = random.choice(reward_gifs)
         st.balloons()
         st.markdown(
