@@ -169,7 +169,6 @@ Message: {final_message}"""
     
     if st.session_state.streak % 3 == 0 and st.session_state.streak > 0:
         reward = random.choice(reward_gifs)
-        st.balloons()
         st.markdown(
     f"""
     <div style="
