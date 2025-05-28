@@ -1,7 +1,7 @@
 reward_gifs = [
     {
         "gif": "https://media4.giphy.com/media/v1.Y2lkPTc5MGI3NjExcjhnaTJjOGdpZ21mOXpnajd3cHpueHNyNHVwZHl0eTR5aHExbDk5eiZlcD12MV9pbnRlcm5hbF9naWZfYnlfaWQmY3Q9Zw/DorxfW5xBGSG8bVxRa/giphy.gif",
-        "caption": "Virtual hug loading..."
+        "caption": "Launching: Level 100 Hug Attack. Target locked on you."
     }
 ]
 
