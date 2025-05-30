@@ -21,7 +21,7 @@ score = st.radio(
     horizontal=True
 )
 
-genie_note = st.text_area("Tell me about it:", placeholder="")
+genie_note = st.text_area("Any message for me?:", placeholder="Tell me anything :)")
 
 if "last_checkin" not in st.session_state:
     st.session_state.last_checkin = None
