@@ -86,7 +86,7 @@ if "show_love_letter" not in st.session_state:
     st.session_state.show_love_letter = False
 
 # Button sets the flag to True
-if st.button("New message for you 📬📝"):
+if st.button("New message for you 📬"):
     st.session_state.show_love_letter = True
 
 # Only show the message if the flag is True
