@@ -107,7 +107,7 @@ if st.session_state.show_love_letter:
         ">
         Happy Saturday, baobeir 🌞<br><br>
     
-        Hope your friend’s birthday is a fun one. Cheers to good people and good moments!<br><br>
+        Hope your friend’s birthday is a fun one. Cheers to good people and good moments!<br>
     
         Just wanted to say thank you again for being open during our call these past couple of nights,  
         even when the conversation got real.  
