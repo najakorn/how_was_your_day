@@ -86,7 +86,7 @@ Message: {final_message}"""
         st.session_state.show_love_letter = False
     
     # Button sets the flag to True
-    if st.button("New message for you 📬"):
+    if st.button("YOU GOT A MESSAGE!"):
         st.session_state.show_love_letter = True
     
     # Only show the message if the flag is True
