@@ -80,59 +80,56 @@ Message: {final_message}"""
     if score == 5:
         st.balloons()
 
-
-    # Initialize flag once
-    if "show_love_letter" not in st.session_state:
-        st.session_state.show_love_letter = False
+if "show_love_letter" not in st.session_state:
+    st.session_state.show_love_letter = False
     
-    # Message reveal button
-    with st.container():
-        st.markdown('<div class="custom-button-wrapper">', unsafe_allow_html=True)
-        with st.form(key="message_reveal_form"):
-            reveal_click = st.form_submit_button("YOU GOT A MESSAGE!")
-            if reveal_click:
-                st.session_state.show_love_letter = True
-        st.markdown('</div>', unsafe_allow_html=True)
+with st.container():
+    st.markdown('<div class="custom-button-wrapper">', unsafe_allow_html=True)
+    with st.form(key="message_reveal_form"):
+        reveal_click = st.form_submit_button("YOU GOT A MESSAGE!")
+        if reveal_click:
+            st.session_state.show_love_letter = True
+    st.markdown('</div>', unsafe_allow_html=True)
     
     # Show the letter if clicked
-    if st.session_state.show_love_letter:
-        st.markdown(
-            """
+if st.session_state.show_love_letter:
+    st.markdown(
+        """
             <div style="
-                background-color: #fff8f2;
-                border-left: 5px solid #ff9aa2;
-                padding: 20px;
-                margin-top: 15px;
-                font-size: 16px;
-                border-radius: 12px;
-                color: #5a2e2e;
-                line-height: 1.65;
-            ">
-            Happy Saturday, baobeir 🌞<br><br>
+            background-color: #fff8f2;
+            border-left: 5px solid #ff9aa2;
+            padding: 20px;
+            margin-top: 15px;
+            font-size: 16px;
+            border-radius: 12px;
+            color: #5a2e2e;
+            line-height: 1.65;
+        ">
+        Happy Saturday, baobeir 🌞<br><br>
     
-            Hope your friend’s 40th birthday is a fun one.  
-            Cheers to good people and good moments!<br><br>
+        Hope your friend’s 40th birthday is a fun one.  
+        Cheers to good people and good moments!<br><br>
     
-            Just wanted to say thank you again for being open during our call these past couple of nights,  
-            even when the conversation got a little real.  
-            The way you handled it, staying steady, honest, and kind, meant a lot.  
-            I felt heard and held, and that really stayed with me.<br><br>
+        Just wanted to say thank you again for being open during our call these past couple of nights,  
+        even when the conversation got a little real.  
+        The way you handled it, staying steady, honest, and kind, meant a lot.  
+        I felt heard and held, and that really stayed with me.<br><br>
     
-            Also, thank you for still reading me poems, even when the mood was heavier or it was late.  
-            It’s become this little rhythm I really treasure.  
-            And while I’m at it… thank you for the daily check-ins here too.  
-            They never fail to make me smile.<br><br>
+        Also, thank you for still reading me poems, even when the mood was heavier or it was late.  
+        It’s become this little rhythm I really treasure.  
+        And while I’m at it… thank you for the daily check-ins here too.  
+        They never fail to make me smile.<br><br>
     
-            I know we’re still finding our way through this…  
-            but I genuinely feel like we’re building something with care and meaning.  
-            And I’m really glad it’s with you.<br><br>
+        I know we’re still finding our way through this…  
+        but I genuinely feel like we’re building something with care and meaning.  
+        And I’m really glad it’s with you.<br><br>
     
-            Missing you,<br>
-            <em>Your XBB</em>
-            </div>
-            """,
-            unsafe_allow_html=True
-        )
+        Missing you,<br>
+        <em>Your XBB</em>
+        </div>
+        """,
+        unsafe_allow_html=True
+    )
 
     
     if st.session_state.streak % 3 == 0 and st.session_state.streak > 0:
