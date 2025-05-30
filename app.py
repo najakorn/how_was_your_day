@@ -107,7 +107,7 @@ if st.session_state.show_love_letter:
         ">
         Happy Saturday, baobeir 🌞<br><br>
     
-        Hope your friend’s birthday celebration is full of laughs and good vibes. Cheers to lovely people and happy moments<br>
+        Hope your friend’s birthday celebration is full of laughs and good vibes. Cheers to lovely people and happy moments!<br>
     
         Just wanted to say thank you again for being open during our call these past couple of nights, even when the conversation got real. The way you handled it, staying steady, honest, and kind, meant a lot. I felt heard and held, and that really stayed with me.<br>
     
