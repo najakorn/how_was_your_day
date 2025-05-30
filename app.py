@@ -81,11 +81,11 @@ Message: {final_message}"""
         st.balloons()
 
 
-    # Initialize flag to store whether the message has been revealed
+    # Initialize flag once
     if "show_love_letter" not in st.session_state:
         st.session_state.show_love_letter = False
-
-    # Custom colored button inside a form (to isolate style)
+    
+    # Message reveal button
     with st.container():
         st.markdown('<div class="custom-button-wrapper">', unsafe_allow_html=True)
         with st.form(key="message_reveal_form"):
@@ -93,8 +93,8 @@ Message: {final_message}"""
             if reveal_click:
                 st.session_state.show_love_letter = True
         st.markdown('</div>', unsafe_allow_html=True)
-
-    # If clicked, show the letter
+    
+    # Show the letter if clicked
     if st.session_state.show_love_letter:
         st.markdown(
             """
@@ -111,28 +111,29 @@ Message: {final_message}"""
             Happy Saturday, baobeir 🌞<br><br>
     
             Hope your friend’s 40th birthday is a fun one.  
-            Cheers to good people and good moments! <br><br>
+            Cheers to good people and good moments!<br><br>
     
             Just wanted to say thank you again for being open during our call these past couple of nights,  
             even when the conversation got a little real.  
-            The way you handled it, staying steady, honest, and kind—meant a lot.  
+            The way you handled it, staying steady, honest, and kind, meant a lot.  
             I felt heard and held, and that really stayed with me.<br><br>
     
             Also, thank you for still reading me poems, even when the mood was heavier or it was late.  
             It’s become this little rhythm I really treasure.  
             And while I’m at it… thank you for the daily check-ins here too.  
-            They never fail to make me smile. <br><br>
+            They never fail to make me smile.<br><br>
     
             I know we’re still finding our way through this…  
             but I genuinely feel like we’re building something with care and meaning.  
             And I’m really glad it’s with you.<br><br>
     
             Missing you,<br>
-            <em>Your XBB</em> 
+            <em>Your XBB</em>
             </div>
             """,
             unsafe_allow_html=True
         )
+
     
     if st.session_state.streak % 3 == 0 and st.session_state.streak > 0:
         reward = random.choice(reward_gifs)
