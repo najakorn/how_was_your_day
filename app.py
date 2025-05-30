@@ -112,12 +112,12 @@ if st.session_state.show_love_letter:
         Just wanted to say thank you again for being open during our call these past couple of nights,  
         even when the conversation got real.  
         The way you handled it, staying steady, honest, and kind, meant a lot.  
-        I felt heard and held, and that really stayed with me.<br><br>
+        I felt heard and held, and that really stayed with me.<br>
     
         Also, thank you for still reading me poems every night, even when the mood was heavier or it was late.  
         It’s become this little rhythm I really treasure.  
         And while I’m at it, thank you for the daily check-ins here too.  
-        They never fail to make me smile.<br><br>
+        They never fail to make me smile.<br>
     
         I know we’re still finding our way through this,  
         but I genuinely feel like we’re building something with care and meaning.  
