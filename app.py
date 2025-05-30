@@ -113,7 +113,7 @@ if st.session_state.show_love_letter:
     
         Also, thank you for still reading me poems every night, even when the mood was heavier or it was late. It’s become this little rhythm I really treasure. And while I’m at it, thank you for the daily check-ins here too. They never fail to make me smile.<br>
     
-        I know we’re still finding our way through this, but I genuinely feel like we’re building something with care and meaning.  
+        I know we’re still finding our way through this, but I genuinely feel like we’re figuring out something that’s worth holding onto.  
         ...And I’m really glad it’s with you.<br><br>
     
         Missing you,<br>
