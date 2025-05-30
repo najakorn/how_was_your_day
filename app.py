@@ -81,15 +81,20 @@ Message: {final_message}"""
         st.balloons()
 
 
-    # Initialize the flag once
+    # Initialize flag to store whether the message has been revealed
     if "show_love_letter" not in st.session_state:
         st.session_state.show_love_letter = False
-    
-    # Button sets the flag to True
-    if st.button("YOU GOT A MESSAGE!"):
-        st.session_state.show_love_letter = True
-    
-    # Only show the message if the flag is True
+
+    # Custom colored button inside a form (to isolate style)
+    with st.container():
+        st.markdown('<div class="custom-button-wrapper">', unsafe_allow_html=True)
+        with st.form(key="message_reveal_form"):
+            reveal_click = st.form_submit_button("YOU GOT A MESSAGE!")
+            if reveal_click:
+                st.session_state.show_love_letter = True
+        st.markdown('</div>', unsafe_allow_html=True)
+
+    # If clicked, show the letter
     if st.session_state.show_love_letter:
         st.markdown(
             """
@@ -108,7 +113,7 @@ Message: {final_message}"""
             Hope your friend’s 40th birthday is a fun one.  
             Cheers to good people and good moments! <br><br>
     
-            Just wanted to say thank you again for being open during our call these past couple of night,  
+            Just wanted to say thank you again for being open during our call these past couple of nights,  
             even when the conversation got a little real.  
             The way you handled it, staying steady, honest, and kind—meant a lot.  
             I felt heard and held, and that really stayed with me.<br><br>
@@ -128,8 +133,6 @@ Message: {final_message}"""
             """,
             unsafe_allow_html=True
         )
-
-
     
     if st.session_state.streak % 3 == 0 and st.session_state.streak > 0:
         reward = random.choice(reward_gifs)
