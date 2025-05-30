@@ -86,7 +86,7 @@ if "show_love_letter" not in st.session_state:
     st.session_state.show_love_letter = False
 
 # Button sets the flag to True
-if st.button("💌 New message for you"):
+if st.button("New message for you"):
     st.session_state.show_love_letter = True
 
 # Only show the message if the flag is True
@@ -106,24 +106,24 @@ if st.session_state.show_love_letter:
         Happy Saturday, baobeir 🌞<br><br>
 
         Hope your friend’s 40th birthday is a fun one.  
-        Cheers to good people and good moments! 🥂<br><br>
+        Cheers to good people and good moments! <br><br>
 
-        Just wanted to say thank you again for being open during our call the other night,  
+        Just wanted to say thank you again for being open during our call these past couple of night,  
         even when the conversation got a little real.  
-        The way you handled it—staying steady, honest, and kind—meant a lot.  
+        The way you handled it, staying steady, honest, and kind—meant a lot.  
         I felt heard and held, and that really stayed with me.<br><br>
 
         Also, thank you for still reading me poems, even when the mood was heavier or it was late.  
         It’s become this little rhythm I really treasure.  
         And while I’m at it… thank you for the daily check-ins here too.  
-        They never fail to make me smile. ✨<br><br>
+        They never fail to make me smile. <br><br>
 
         I know we’re still finding our way through this…  
         but I genuinely feel like we’re building something with care and meaning.  
         And I’m really glad it’s with you.<br><br>
 
         Missing you,<br>
-        <em>Your XBB</em> 💌
+        <em>Your XBB</em> 
         </div>
         """,
         unsafe_allow_html=True
