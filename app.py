@@ -80,48 +80,47 @@ Message: {final_message}"""
     if score == 5:
         st.balloons()
 
-if "show_love_letter" not in st.session_state:
-    st.session_state.show_love_letter = False
+# if "show_love_letter" not in st.session_state:
+#     st.session_state.show_love_letter = False
     
-with st.container():
-    st.markdown('<div class="custom-button-wrapper">', unsafe_allow_html=True)
-    with st.form(key="message_reveal_form"):
-        reveal_click = st.form_submit_button("YOU GOT A MESSAGE!")
-        if reveal_click:
-            st.session_state.show_love_letter = True
-    st.markdown('</div>', unsafe_allow_html=True)
+# with st.container():
+#     st.markdown('<div class="custom-button-wrapper">', unsafe_allow_html=True)
+#     with st.form(key="message_reveal_form"):
+#         reveal_click = st.form_submit_button("YOU GOT A MESSAGE!")
+#         if reveal_click:
+#             st.session_state.show_love_letter = True
+#     st.markdown('</div>', unsafe_allow_html=True)
     
-    # Show the letter if clicked
-if st.session_state.show_love_letter:
-    st.markdown(
-        """
-            <div style="
-            background-color: #fff8f2;
-            border-left: 5px solid #ff9aa2;
-            padding: 20px;
-            margin-top: 15px;
-            font-size: 16px;
-            border-radius: 12px;
-            color: #5a2e2e;
-            line-height: 1.65;
-        ">
-        Happy Saturday, baobeir 🌞<br><br>
+# if st.session_state.show_love_letter:
+#     st.markdown(
+#         """
+#             <div style="
+#             background-color: #fff8f2;
+#             border-left: 5px solid #ff9aa2;
+#             padding: 20px;
+#             margin-top: 15px;
+#             font-size: 16px;
+#             border-radius: 12px;
+#             color: #5a2e2e;
+#             line-height: 1.65;
+#         ">
+#         Happy Saturday, baobeir 🌞<br><br>
     
-        Hope your friend’s birthday celebration is full of laughs and good vibes. Cheers to lovely people and happy moments!<br>
+#         Hope your friend’s birthday celebration is full of laughs and good vibes. Cheers to lovely people and happy moments!<br>
     
-        Just wanted to say thank you again for being open during our call these past couple of nights. The way you handled it, staying steady, honest, and kind, meant a lot. I felt heard and held, and that really stayed with me.<br>
+#         Just wanted to say thank you again for being open during our call these past couple of nights. The way you handled it, staying steady, honest, and kind, meant a lot. I felt heard and held, and that really stayed with me.<br>
     
-        Also, thank you for reading me poems every night, even when the mood was heavier or it was late. It’s become this little rhythm I really treasure. And while I’m at it, thank you for the daily check-ins here too. They never fail to make me smile.<br>
+#         Also, thank you for reading me poems every night, even when the mood was heavier or it was late. It’s become this little rhythm I really treasure. And while I’m at it, thank you for the daily check-ins here too. They never fail to make me smile.<br>
     
-        I know we’re still finding our way through this, but I genuinely feel like we’re figuring out something that’s worth holding onto.  
-        <em>And I’m really glad it’s with you.</em><br><br>
+#         I know we’re still finding our way through this, but I genuinely feel like we’re figuring out something that’s worth holding onto.  
+#         <em>And I’m really glad it’s with you.</em><br><br>
     
-        Missing you,<br>
-        Your XBB
-        </div>
-        """,
-        unsafe_allow_html=True
-    )
+#         Missing you,<br>
+#         Your XBB
+#         </div>
+#         """,
+#         unsafe_allow_html=True
+#     )
 
     
     if st.session_state.streak % 3 == 0 and st.session_state.streak > 0:
