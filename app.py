@@ -6,7 +6,8 @@ from utils import send_telegram_message, update_streak
 from gif import reward_gifs
 
 st.set_page_config(page_title="How was your day?", page_icon="🌈")
-st.title("Heeelllloooo... how was your day, baobeir?")
+st.title("Heeelllloooo... how was your day?")
+st.markdown("The "Baobeir" title has been snatched till further development")
 
 score = st.radio(
     " ",
