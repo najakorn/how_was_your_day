@@ -7,7 +7,7 @@ from gif import reward_gifs
 
 st.set_page_config(page_title="How was your day?", page_icon="🌈")
 st.title("Heeelllloooo... how was your day?")
-st.markdown("The Baobeir title has been snatched till further development")
+st.markdown("The Baobeir title has been snatched till further significant development")
 
 score = st.radio(
     " ",
